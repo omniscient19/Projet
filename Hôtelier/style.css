@@ -1,0 +1,169 @@
+html {
+  scroll-behavior: smooth;
+}
+h2,
+h3,
+h4,
+#transition,
+footer {
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+/*********EN-TETE*********/
+.collapse {
+  margin-left: 4%;
+}
+.nav-item {
+  color: darkslategray;
+  font-weight: bold;
+}
+
+header {
+  background: url("media/pexels.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  height: 70vh;
+  margin-bottom: 40px;
+}
+/********Page d'accueil*********/
+h1 {
+  text-align: center;
+  font-size: 4.5em;
+  padding: 200px;
+  color: white;
+  text-shadow: 1px 1px 0 #75b6eb, 1px -1px 0 #75b6eb, -1px 1px 0 #75b6eb,
+    -1px -1px 0 #75b6eb, 1px 0px 0 #75b6eb, 0px 1px 0 #75b6eb,
+    -1px 0px 0 #75b6eb, 0px 1px 0 #75b6eb;
+}
+
+/**********Parti gauche**********/
+#leftPart {
+  background-color: #75b6eb;
+  border-radius: 20px;
+  padding: 25px;
+}
+.elements {
+  padding: 70px 0;
+}
+/*******Forme des photos**********/
+.elements img {
+  border-radius: 500%;
+  width: 155px;
+}
+/******Alignement et longeur du texte********/
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-right: 20px;
+}
+.elements.button {
+  text-align: right;
+  margin: 15px 4% 0 0;
+}
+span {
+  font-size: 1.2em;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/***********Parti droite********/
+#rightPart {
+  background: rgb(232, 244, 5);
+  border-radius: 20px;
+  padding: 20px;
+}
+.tips {
+  height: 250px;
+  width: 250px;
+  margin: 20px auto;
+}
+.tips h4 {
+  position: relative;
+  color: azure;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/**********permet de placer les boutons à gauche (barre de navigation)*******/
+ul.navbar-nav {
+  margin-left: auto;
+}
+/**************Formulaire de contact***************/
+section {
+  background: rgb(198, 37, 37);
+  color: #fffae1;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 100px 0 100px;
+}
+form {
+  margin: 20px;
+  max-width: 900px;
+  width: 50%;
+  padding: 20px;
+  margin: 0 200px 0 300px;
+}
+
+input,
+textarea {
+  border: none;
+  width: 50%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  border-radius: 8px;
+}
+
+button {
+  font-size: 1.5em;
+}
+
+/**************MediaQueries(responsive)**************/
+@media screen and (max-width: 900) {
+  #rightPart {
+    display: flex;
+  }
+  #rightPart h2 {
+    display: none;
+  }
+  .tips {
+    height: 130px;
+    width: 130px;
+  }
+}
+@media screen and (max-widht: 790px) {
+  h1 .navbar {
+    font-size: 3em;
+  }
+  .elements {
+    padding: 30px 0;
+  }
+  .elements img {
+    max-width: 140px;
+    margin-top: 40px;
+  }
+  .tips {
+    height: 90px;
+    width: 90px;
+  }
+  .tips h4 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-widht: 580px) {
+  .footer h4 {
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  .elements {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .elements img {
+    margin-bottom: 10px;
+  }
+}
